@@ -11,7 +11,18 @@
 
         table {
             width: 500px;
-            border-collapse: collapse;
+            border-collapse: collapse;            
+        }
+
+        caption {
+             font-size: 1.5em;
+             font-weight: bold;
+             padding: 10px;
+        
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
             
         }
 
@@ -19,6 +30,7 @@
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            font-size: 1.1em;
         }
 
         thead, tfoot {
@@ -35,6 +47,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -43,10 +56,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
        </thead>
        <tbody>
@@ -95,7 +109,7 @@
             <td class="num">7 056 495</td>
         </tr>
         <tr>
-            <td>Marahão</td>
+            <td>Maranhão</td>
             <td class="num">6 775 805</td>
         </tr>
         <tr>
@@ -161,7 +175,7 @@
        </tbody>
        <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 720</strong></td>
             </tr>
        </tfoot>
