@@ -11,7 +11,8 @@
 
         table {
             width: 500px;
-            border-collapse: collapse;            
+            border-collapse: collapse;
+            position: relative;            
         }
 
         caption {
@@ -19,6 +20,12 @@
              font-weight: bold;
              padding: 10px;
         
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: #383838;
         }
 
         tbody tr:nth-child(2n) {
@@ -34,7 +41,7 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
 
